@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Battle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Battle"
+    android:background="@color/Blue">
+    <TextView
+        android:id="@+id/TurnAndPlayerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1's Turn"
+        android:textColor="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/pokemon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:src="@drawable/missingno"
+        app:layout_constraintRight_toLeftOf="@id/TurnAndPlayerText"
+        app:layout_constraintTop_toBottomOf="@id/TurnAndPlayerText">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/pokemon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:src="@drawable/missingno"
+        app:layout_constraintLeft_toRightOf="@id/TurnAndPlayerText"
+        app:layout_constraintTop_toBottomOf="@id/TurnAndPlayerText">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/pokemon1health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:text="HP: 50/50"
+        android:textColor="@color/yellow"
+        app:layout_constraintLeft_toLeftOf="@id/pokemon1"
+        app:layout_constraintTop_toBottomOf="@id/pokemon1">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/pokemon2health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="32dp"
+        android:text="HP: 50/50"
+        android:textColor="@color/yellow"
+        app:layout_constraintLeft_toLeftOf="@id/pokemon2"
+        app:layout_constraintTop_toBottomOf="@id/pokemon1">
+
+    </TextView>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MoveRadioGroup"
+        app:layout_constraintRight_toRightOf="@id/TurnAndPlayerText"
+        app:layout_constraintLeft_toLeftOf="@id/TurnAndPlayerText"
+        app:layout_constraintTop_toBottomOf="@id/TurnAndPlayerText"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/move1button"
+            android:text="//MOVE1"
+            android:textColor="@color/yellow">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/move2button"
+            android:text="//MOVE2"
+            android:textColor="@color/yellow">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/move3button"
+            android:text="//MOVE3"
+            android:textColor="@color/yellow">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/move4button"
+            android:text="//MOVE4"
+            android:textColor="@color/yellow">
+        </RadioButton>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SelectMoveButton"
+        app:layout_constraintRight_toRightOf="@id/MoveRadioGroup"
+        app:layout_constraintLeft_toLeftOf="@id/MoveRadioGroup"
+        app:layout_constraintTop_toBottomOf="@id/MoveRadioGroup"
+        android:text="SELECT"
+        android:textColor="@color/yellow">
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rematchButton"
+        android:text="REMATCH"
+        android:textColor="@color/yellow"
+        app:layout_constraintRight_toRightOf="@id/SelectMoveButton"
+        app:layout_constraintLeft_toLeftOf="@id/SelectMoveButton"
+        app:layout_constraintTop_toBottomOf="@id/SelectMoveButton"
+        android:visibility="invisible"
+        >
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ReturnToTitleButtion"
+        android:text="RETURN TO TITLE"
+        android:textColor="@color/Blue"
+        app:layout_constraintRight_toRightOf="@id/rematchButton"
+        app:layout_constraintLeft_toLeftOf="@id/rematchButton"
+        app:layout_constraintTop_toBottomOf="@id/rematchButton"
+        android:visibility="invisible"
+        >
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

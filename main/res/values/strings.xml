@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PokemonBattleSim</string>
+    <string name="pokemon_battle_sim">Pokemon Battle Sim</string>
+    <string name="play">Play</string>
+    <string name="match_history">Match History</string>
+    <string name="settings">Settings</string>
+    <string name="player_choose_your_pokemon">Player 1 choose your Pokemon…</string>
+    <string name="squirtlebio">Squirtle is a small, water type Pokemon originating from the Kanto region.</string>
+    <string name="bulbasaurbio">Bulbasaur is a small, grass type Pokemon originating from the Kanto region.</string>
+    <string name="charmanderbio">Charmander is a small, fire type Pokemon originating from the Kanto region.</string>
+    <string name="squirtlemoves">
+        Tackle: Deals light damage to opponent.
+        Tail Whip: Reduces defense of opponent by 10%.
+        Water Gun: Deals moderate damage. Increased damage against Charmander.
+        Withdraw: Increases defense by 20%.
+    </string>
+    <string name="bulbasaurmoves">
+        Tackle: Deals light damage to opponent.
+        Vine Whip: Deals moderate damage. Increased damage against Squirtle.
+        Growl: Reduces attack power of opponent by 10%.
+        Leech Seed: Deals a small amount of damage each turn, and restores that same amount to itself.
+    </string>
+    <string name="charmandermoves">
+        Scratch: Deals light damage to opponent.
+        Rage: Increases attack power ny 20%.
+        Ember: Deals moderate damage. Increased damage against Bulbasaur.
+        Leer: Reduces defense of opponent by 10%.
+    </string>
+
+</resources>
